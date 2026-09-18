@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Gramventure</title>
+<meta name="description" content="Login to your Gramventure account.">
+<link rel="icon" href="assets/img/gramventure_logo_new.png">
+<link rel="stylesheet" href="assets/css/style.css">
+
+  <meta name="view-transition" content="same-origin">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to Main Content</a>
+
+<header class="site-header gov-header">
+  <!-- Main Tier -->
+  <div class="main-tier-row">
+    <a class="brand" href="index.html" style="text-decoration:none; display:flex; align-items:center;">
+      <img src="assets/img/gramventure_logo_new.png" alt="Gramventure Logo" class="brand-logo">
+      <div class="brand-text">
+        <h1 style="font-size: 22px; margin:0; color:var(--navy-dark); font-weight:800; letter-spacing:-0.03em;">Gramventure</h1>
+        <p class="gov-subtitle" style="margin:2px 0 0; font-size:12px; color:var(--grey-500); font-weight:500;">Empowering Local Communities</p>
+      </div>
+    </a>
+    
+        <div class="app-switcher" id="mainSwitcher">
+      <div class="switcher-bg"></div>
+      <a href="index.html" class="switch-btn active">🏢 Business</a>
+      <a href="financial-literacy.html" class="switch-btn">🎓 Academy</a>
+    </div>
+
+    <div class="header-actions">
+      <form class="glass-search-form" role="search" onsubmit="return false;">
+        <button type="submit" aria-label="Search">🔍</button>
+        <input id="siteSearch" type="text" placeholder="Search schemes, loans...">
+      </form>
+      <a id="loginBtn" href="login.html" class="btn btn-primary" style="padding: 8px 16px; border-radius: 20px;">👤 Sign In</a>
+    </div>
+  </div>
+
+  <!-- Primary Navigation Tier -->
+  <nav class="primary-nav-tier" aria-label="Primary">
+    <ul>
+      <li><a class="" href="index.html">Home</a></li>
+      <li><a class="" href="schemes-benefits.html">Schemes & Benefits</a></li>
+      <li><a class="" href="loans-facility.html">Loans Facility</a></li>
+      <li><a class="" href="government-initiatives.html">Core Initiatives</a></li>
+      <li><a class="" href="impact-data.html">Impact & Data</a></li>
+      <li><a class="" href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main" class="auth-split">
+  <div class="auth-split-visual">
+    <h2 style="font-size:42px; line-height:1.2; margin-bottom:16px;">Empowering<br>Local Communities</h2>
+    <p style="font-size:18px; opacity:0.9; max-width:400px; line-height:1.6;">Access tailored government schemes, secure micro-financing, and financial literacy courses—all designed for rural entrepreneurs.</p>
+  </div>
+  
+  <div class="auth-split-form">
+    <div class="login-card">
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h2 style="margin-top:0;">Welcome Back</h2>
+        <p class="muted">Sign in to access your dashboard.</p>
+      </div>
+      
+      <button class="fast-login-btn" id="fastLoginBtn" type="button">
+        ⚡ Fast Login (Demo Mode)
+      </button>
+      
+      <form id="loginForm">
+        <div class="form-row">
+          <label for="email" style="color: var(--grey-700);">Email or Mobile Number</label>
+          <div class="input-group">
+            <span class="icon">✉️</span>
+            <input type="text" id="email" class="modern-input" placeholder="e.g. ramesh.kumar@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="password" style="color: var(--grey-700);">Password</label>
+          <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="password" class="modern-input" placeholder="••••••••" required>
+            <button type="button" class="toggle-password" onclick="const p = document.getElementById('password'); if(p.type==='password'){p.type='text'; this.textContent='👁️';}else{p.type='password'; this.textContent='👁️‍🗨️';}">👁️‍🗨️</button>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-size: 13.5px;">
+          <label style="display: flex; align-items: center; gap: 8px; font-weight: 500; cursor: pointer; margin-bottom: 0;">
+            <input type="checkbox" style="width: auto; margin: 0; box-shadow: none;"> Remember me
+          </label>
+          <a href="#" style="font-weight: 600; color: var(--navy);">Forgot Password?</a>
+        </div>
+        <button class="btn modern-btn btn-block" type="submit">Login to Dashboard →</button>
+      </form>
+      <p style="text-align:center; margin-top:24px; font-size:14.5px; color: var(--grey-700);">
+        New to Gramventure? <a href="register.html" style="font-weight: 700; color: var(--navy);">Register here</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Gramventure</h4>
+      <p>An initiative connecting rural entrepreneurs with financial literacy, schemes, loans and market opportunities to build a self-reliant rural economy.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="financial-literacy.html">Financial Literacy</a></li>
+        <li><a href="schemes-benefits.html">Schemes &amp; Benefits</a></li>
+        <li><a href="loans-facility.html">Loans Facility</a></li>
+        <li><a href="start-business.html">Start a Business</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="government-initiatives.html">Core Initiatives</a></li>
+        <li><a href="impact-data.html">Impact &amp; Data</a></li>
+        <li><a href="#">RTI</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Toll-Free: 1800-11-0001</li>
+        <li>helpdesk@gramventure.com</li>
+        <li>Mon–Sat, 9:00 AM – 6:00 PM IST</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Content owned by Empowering Local Communities (demo build) &nbsp;|&nbsp; Last updated: September 2026
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+document.getElementById('fastLoginBtn').addEventListener('click', () => {
+  document.getElementById('email').value = 'demo@gramventure.in';
+  document.getElementById('password').value = 'password123';
+});
+
+document.getElementById("loginForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const email = document.getElementById("email").value.trim();
+  const namePart = email.split("@")[0].replace(/[._]/g," ").replace(/\b\w/g, c=>c.toUpperCase()) || "Rural Entrepreneur";
+  let user = reiGetUser();
+  if(!user){
+    user = { name:namePart, email:email, phone:"", state:"", createdAt:new Date().toISOString() };
+  }
+  reiSetUser(user);
+  window.location.href = "dashboard.html";
+});
+</script>
+
+<script src="assets/js/animate-stats.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const switcher = document.getElementById('mainSwitcher');
+    if (!switcher) return;
+    const bg = switcher.querySelector('.switcher-bg');
+    const btns = switcher.querySelectorAll('.switch-btn');
+    
+    btns.forEach((btn, index) => {
+      btn.addEventListener('click', (e) => {
+        // If it's already active, do nothing
+        if (btn.style.color === 'rgb(15, 23, 42)' || btn.style.color === 'rgb(109, 40, 217)' || btn.style.fontWeight === '700') {
+           // We are already on this page
+        } else {
+           e.preventDefault();
+           const targetUrl = btn.href;
+           
+           // Slide the background
+           bg.style.transform = index === 0 ? 'translateX(0)' : 'translateX(94px)';
+           
+           // Update colors immediately for feel
+           btns[0].style.color = index === 0 ? '#0f172a' : '#64748b';
+           btns[0].style.fontWeight = index === 0 ? '700' : '600';
+           
+           btns[1].style.color = index === 1 ? '#6d28d9' : '#64748b';
+           btns[1].style.fontWeight = index === 1 ? '700' : '600';
+
+           // Wait for slide animation (300ms) then navigate
+           setTimeout(() => {
+             window.location.href = targetUrl;
+           }, 300);
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

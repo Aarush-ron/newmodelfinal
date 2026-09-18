@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loans Facility | Gramventure</title>
+<meta name="description" content="Compare loan products and calculate EMI for your rural business.">
+<link rel="icon" href="assets/img/gramventure_logo_new.png">
+<link rel="stylesheet" href="assets/css/style.css">
+
+  <meta name="view-transition" content="same-origin">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to Main Content</a>
+
+<header class="site-header gov-header">
+  <!-- Main Tier -->
+  <div class="main-tier-row">
+    <a class="brand" href="index.html" style="text-decoration:none; display:flex; align-items:center;">
+      <img src="assets/img/gramventure_logo_new.png" alt="Gramventure Logo" class="brand-logo" style="height: 100px !important; width: auto; object-fit: contain; margin-left: -40px;">
+      <div class="brand-text">
+        <h1 style="font-size: 22px; margin:0; color:var(--navy-dark); font-weight:800; letter-spacing:-0.03em;">Gramventure</h1>
+        <p class="gov-subtitle" style="margin:2px 0 0; font-size:12px; color:var(--grey-500); font-weight:500;">Empowering Local Communities</p>
+      </div>
+    </a>
+    
+        <div class="app-switcher" id="mainSwitcher">
+      <div class="switcher-bg"></div>
+      <a href="index.html" class="switch-btn active">🏢 Business</a>
+      <a href="financial-literacy.html" class="switch-btn">🎓 Academy</a>
+    </div>
+
+    <div class="header-actions">
+      <form class="glass-search-form" role="search" onsubmit="return false;">
+        <button type="submit" aria-label="Search">🔍</button>
+        <input id="siteSearch" type="text" placeholder="Search schemes, loans...">
+      </form>
+      <a id="loginBtn" href="login.html" class="btn btn-primary" style="padding: 8px 16px; border-radius: 20px;">👤 Sign In</a>
+    </div>
+  </div>
+
+  <!-- Primary Navigation Tier -->
+  <nav class="primary-nav-tier" aria-label="Primary">
+    <ul>
+      <li><a class="" href="index.html">Home</a></li>
+      <li><a class="" href="schemes-benefits.html">Schemes & Benefits</a></li>
+      <li><a class="active" href="loans-facility.html">Loans Facility</a></li>
+      <li><a class="" href="government-initiatives.html">Core Initiatives</a></li>
+      <li><a class="" href="impact-data.html">Impact & Data</a></li>
+      <li><a class="" href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb">Home / Loans Facility</p>
+    <h2>Loans Facility</h2>
+    <p class="lead">Compare loan products, understand interest rates, and estimate your EMI before you apply.</p>
+  </div>
+</section>
+<div class="page-body">
+  <div class="two-col">
+    <div>
+      <h3 class="section-title">Loan Products</h3>
+      <div id="loanList"></div>
+    </div>
+    <div>
+      <div class="card">
+        <h4 style="margin-top:0;">Live EMI Calculator</h4>
+        <div class="form-row">
+          <label for="loanAmt">Loan amount: <strong id="amtVal">₹1,40,000</strong></label>
+          <input type="range" id="loanAmt" min="10000" max="1000000" step="10000" value="140000">
+        </div>
+        <div class="form-row">
+          <label for="loanRate">Interest rate: <strong id="rateVal">8.5% p.a.</strong></label>
+          <input type="range" id="loanRate" min="5.0" max="15.0" step="0.1" value="8.5">
+        </div>
+        <div class="form-row">
+          <label for="loanTenure">Tenure: <strong id="tenureVal">36 months</strong></label>
+          <input type="range" id="loanTenure" min="6" max="120" step="6" value="36">
+        </div>
+        <div id="emiResult" style="margin-top:24px; display:flex; gap:20px; align-items:center;"></div>
+      </div>
+      <div class="card">
+        <a class="btn btn-saffron btn-block" href="start-business.html">Start a Loan Application →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Gramventure</h4>
+      <p>An initiative connecting rural entrepreneurs with financial literacy, schemes, loans and market opportunities to build a self-reliant rural economy.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="financial-literacy.html">Financial Literacy</a></li>
+        <li><a href="schemes-benefits.html">Schemes &amp; Benefits</a></li>
+        <li><a href="loans-facility.html">Loans Facility</a></li>
+        <li><a href="start-business.html">Start a Business</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="government-initiatives.html">Core Initiatives</a></li>
+        <li><a href="impact-data.html">Impact &amp; Data</a></li>
+        <li><a href="#">RTI</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Toll-Free: 1800-11-0001</li>
+        <li>helpdesk@gramventure.com</li>
+        <li>Mon–Sat, 9:00 AM – 6:00 PM IST</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Content owned by Empowering Local Communities (demo build) &nbsp;|&nbsp; Last updated: September 2026
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", ()=>{
+  document.getElementById("loanList").innerHTML = REI_DATA.loanProducts.map(l=>`
+    <div class="card">
+      <h4 style="margin:0 0 8px;">${l.name}</h4>
+      <table>
+        <tr><th>Loan Range</th><td>${l.range}</td></tr>
+        <tr><th>Interest Rate</th><td>${l.rate}</td></tr>
+        <tr><th>Tenure</th><td>${l.tenure}</td></tr>
+        <tr><th>Collateral</th><td>${l.collateral}</td></tr>
+      </table>
+    </div>
+  `).join("");
+
+  const amtInput = document.getElementById("loanAmt");
+  const rateInput = document.getElementById("loanRate");
+  const tenureInput = document.getElementById("loanTenure");
+  const amtVal = document.getElementById("amtVal");
+  const rateVal = document.getElementById("rateVal");
+  const tenureVal = document.getElementById("tenureVal");
+
+  function calc(){
+    const p = parseFloat(amtInput.value)||0;
+    const r = parseFloat(rateInput.value)||0;
+    const n = parseInt(tenureInput.value)||1;
+    
+    amtVal.textContent = reiFormatINR(p);
+    rateVal.textContent = r.toFixed(1) + "% p.a.";
+    tenureVal.textContent = n + " months";
+
+    const emi = reiEMI(p,r,n);
+    const total = emi*n;
+    const interest = total-p;
+    
+    const principalPct = total > 0 ? (p / total) * 100 : 100;
+    const interestPct = total > 0 ? (interest / total) * 100 : 0;
+
+    const res = document.getElementById("emiResult");
+    
+    res.innerHTML = `
+      <div style="flex:1;">
+        <div class="summary-row"><span>Monthly EMI</span><span class="flash-text" style="font-size:18px; font-weight:800; color:var(--navy);">${reiFormatINR(Math.round(emi))}</span></div>
+        <div class="summary-row"><span>Total Payable</span><span class="flash-text">${reiFormatINR(Math.round(total))}</span></div>
+        <div class="summary-row"><span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--saffron);"></span> Total Interest</span><span class="flash-text">${reiFormatINR(Math.round(interest))}</span></div>
+        <div class="summary-row" style="margin-top:-6px;"><span style="display:flex;align-items:center;gap:4px;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--navy);"></span> Principal</span><span class="flash-text">${reiFormatINR(Math.round(p))}</span></div>
+      </div>
+      <div style="width: 100px; height: 100px; flex-shrink:0;">
+        <svg viewBox="0 0 36 36" style="width: 100%; height: 100%; transform: rotate(-90deg);">
+          <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="var(--navy)" stroke-width="6" stroke-dasharray="${principalPct}, 100" style="transition: stroke-dasharray 0.3s ease;" />
+          <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="var(--saffron)" stroke-width="6" stroke-dasharray="${interestPct}, 100" stroke-dashoffset="-${principalPct}" style="transition: stroke-dasharray 0.3s ease, stroke-dashoffset 0.3s ease;" />
+        </svg>
+      </div>
+    `;
+
+    const els = res.querySelectorAll('.flash-text');
+    els.forEach(el => {
+      el.style.animation = 'none';
+      void el.offsetHeight; // trigger reflow
+      el.style.animation = null; 
+    });
+  }
+  amtInput.addEventListener("input", calc);
+  rateInput.addEventListener("input", calc);
+  tenureInput.addEventListener("input", calc);
+  
+  calc();
+});
+</script>
+
+<script src="assets/js/animate-stats.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const switcher = document.getElementById('mainSwitcher');
+    if (!switcher) return;
+    const bg = switcher.querySelector('.switcher-bg');
+    const btns = switcher.querySelectorAll('.switch-btn');
+    
+    btns.forEach((btn, index) => {
+      btn.addEventListener('click', (e) => {
+        // If it's already active, do nothing
+        if (btn.style.color === 'rgb(15, 23, 42)' || btn.style.color === 'rgb(109, 40, 217)' || btn.style.fontWeight === '700') {
+           // We are already on this page
+        } else {
+           e.preventDefault();
+           const targetUrl = btn.href;
+           
+           // Slide the background
+           bg.style.transform = index === 0 ? 'translateX(0)' : 'translateX(94px)';
+           
+           // Update colors immediately for feel
+           btns[0].style.color = index === 0 ? '#0f172a' : '#64748b';
+           btns[0].style.fontWeight = index === 0 ? '700' : '600';
+           
+           btns[1].style.color = index === 1 ? '#6d28d9' : '#64748b';
+           btns[1].style.fontWeight = index === 1 ? '700' : '600';
+
+           // Wait for slide animation (300ms) then navigate
+           setTimeout(() => {
+             window.location.href = targetUrl;
+           }, 300);
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
